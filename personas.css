@@ -1,0 +1,38 @@
+.personas{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width:768px){
+
+    .personas{
+        flex-direction: column;
+    }
+
+    .persona__imagen{
+        height: 170px;
+        width: 160px;
+    }
+
+    .persona__nombre{
+
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        text-align: center;
+        
+    }
+
+    .persona__funcion{
+        font-size: 1.2rem;
+        text-transform: lowercase;
+        padding-bottom: 20px;
+
+    }
+}
+
+@media screen and (min-width:768px){
+    .personas{
+       flex-direction: row; 
+    }
+}

@@ -1,0 +1,60 @@
+.quienes{
+    background-color: aliceblue;
+}
+.persona{
+    display: flex;
+    flex-direction: column;
+    min-width: 168px;
+    
+}
+.persona__funcion{
+    color: #595959;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+    text-align: center;
+}
+.persona__imagen{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+.quienes__titulo{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.quienes__descripcion{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.persona__nombre{
+    color: #163dee;
+    font-family: pacifico, sans-serif;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    text-align: center;
+    
+}
+@media screen and(min-width:0px){
+    .persona{
+
+        margin-bottom: 2rem;
+
+    }
+
+}
+
+@media screen and(min-width:768px){
+    .persona{
+        margin-bottom: 0;
+    }
+
+
+}
+

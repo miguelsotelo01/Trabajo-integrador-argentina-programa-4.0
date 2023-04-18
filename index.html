@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- bootstrap links y scripts-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <!-- AJAX-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./persona.css">
+    <link rel="stylesheet" href="personas.css">
+
+    <link rel="stylesheet" href="./formulario-contacto/formulario-contacto.css">
+    <link rel="stylesheet" href="./formulario-contrato/formulario-contrato.css">
+
+    <!-- scripts de formularios-->
+    <script src="./formulario-contacto/formulario-contacto.js"></script>
+    <script src="./formulario-contrato/formulario-contrato.js"></script>
+
+
+	  
+	  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    
+
+    
+    
+    <script defer src="./script2.js"></script>
+    
+
+    <title>Trabajo Integrador Argentina Programa 4.0</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom border-dark p-2">
+      <div class="container-fluid d-flex  justify-content-between align-items-center">
+          
+          <div id="container-logo" class="transform-animation d-flex  justify-content-center align-items-center">
+            <a href="#" class="no-underline"><h2><span style="color: rgb(3, 51, 207);">Cu</span><span style="color: rgb(20, 154, 199);">ar</span><span style="color: rgb(109, 30, 212);">so</span></h2></a> 
+            <a class="navbar-brand" href="#">
+              <img src="./img/webdev-1.svg" class="logo" alt="Icono cuarso">
+              </a>
+              
+          </div>
+
+          <div id="container-nav-elements">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3 transform-animation">
+                      <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+                    </li>
+                    <li class="nav-item mx-3 transform-animation">
+                      <a class="nav-link" href="#planes">Planes</a>
+                    </li>
+                    <li class="nav-item mx-3 transform-animation">
+                      <a class="nav-link" href="#staff">Staff</a>
+                    </li>
+                    <li class="nav-item mx-3 transform-animation">
+                      <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item mx-3 transform-animation" >
+                      <a class="nav-link" href="#contrato-container">Contrato</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+      </div>
+  </nav>
+</header>
+  
+
+    <section class= "container-fluid d-flex hero-container bg-hero text-white">
+            <div class= "hero-text d-flex flex-column justify-content-center align-items-start">
+              <div class="typewriter">
+                <h1 id="text">Aplicaciones hechas a la medida</h1>
+              </div>
+                <p class="llamada__texto lead my-2">Cuarso es una empresa emergente con una manera inovadora de crear y diseñar aplicaciones móviles y web.</p>
+                <a class="llamada__boton mt-3 p-2 btn btn-light btn-lg transform-animation" href="#planes">Conozca los planes</a>
+          </div>
+        </div>
+      </section>
+
+      
+      <div id="quienes-somos" class="container-fluid text-center">
+        <h3>CONOCENOS</h3>
+        <h2>Quienes somos</h2>
+        <p class="pb-4">Somos una empresa ficticia creada para nuestro proyecto final de <b>Argentina Programa 4.0</b>! <br><br>
+
+          ¡En Cuarso creamos aplicaciones y sitios web personalizados para todas las personas! <br><br>
+          
+          La manutención de una aplicación no puede ser un costo extra para el cliente. <b>En cuarso cuando firmas nuestro servicio, la manutención ya se incluye en el servicio.</b> De esa manera no te preocupas con las actualizaciónes de tu sitio o app, <b> es por cuenta nuestra!</b> <br><br>
+          
+          Tenemos un equipo especializado y exclusivo para proyectos increíbles!
+          </p>
+      </div>
+
+    <section id="section-planes" class="d-flex flex-column justify-content-center align-items-center">
+      
+      <h3>NUESTROS SERVICIOS</h3>
+      <h2 id="planes">Planes</h2>
+      <p>Conozca todos nuestros planes desde el servicio basico <b>SILVER</b> hasta el servicio premium <b>DIAMOND</b>!</p>
+
+      <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+                <img src="./img/silver logo.PNG" class="d-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><b>SILVER</b></h5>
+                <h4 class="card-title text-center"><b>$500/Mes</b></h4>
+                <ul>
+                  <li class="card-text">5 manutenciones mensuales</li>
+                  <li class="card-text">Web SEO</li>
+                  <li class="card-text">Proyecto de hasta 3 paginas simples</li>
+                  <li class="card-text">Acceso a nuestro soporte tecnico</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Contratar</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./img/golden logo.PNG" class="d-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><b>GOLD</b></h5>
+                <h4 class="card-title text-center"><b>$1000/Mes</b></h4>
+                <ul>
+                  <li class="card-text">10 manutenciones mensuales</li>
+                  <li class="card-text">Web SEO</li>
+                  <li class="card-text">Proyecto de hasta 6 paginas simples</li>
+                  <li class="card-text">Acceso a nuestro soporte tecnico</li>
+                </ul>
+                  <a href="#" class="btn btn-primary">Contratar</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./img/platinum logo.PNG" class="d-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">PLATINUM</h5>
+                <h4 class="card-title text-center"><b>$1500/Mes</b></h4>
+                <ul>
+                  <li class="card-text">20 manutenciones mensuales</li>
+                  <li class="card-text">Web SEO</li>
+                  <li class="card-text">Proyecto de hasta 10 paginas simples</li>
+                  <li class="card-text">Acceso a  soporte tecnico 24/7</li>
+                </ul>
+                <a href="#" class="btn btn-primary">contratar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <img src="./img/diamond logo.PNG" class="d-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">DIAMOND</h5>
+                <h4 class="card-title text-center"><b>$2000/Mes</b></h4>
+                <ul>
+                  <li class="card-text">30 manutenciones mensuales</li>
+                  <li class="card-text">Web SEO</li>
+                  <li class="card-text">Proyecto de hasta 20 paginas simples</li>
+                  <li class="card-text">Acceso a soporte tecnico 24/7</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Contratar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+      <section id="section-staff" class="quienes d-flex flex-column justify-content-center">
+        
+        <div id="staff-container" class="align-self-center text-center">
+          <h3>CONOCE A NUESTROS CREADORES DE CONTENIDO</h3>
+          <h2 id="staff">Staff</h2>
+        </div>
+
+        <div class="personas d-flex" id="users">
+        </div>
+
+      </section>
+
+      
+      <section class="formulario-contacto d-flex flex-column" id="formulario-contacto">
+        
+        <form id="formulario">
+
+          <div id="contacto-container" class="align-self-center text-center">
+            <h3>COMUNICATE CON NOSOTROS</h3>
+            <h2 id="contacto">Contacto</h1>
+          </div>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <input type="text" class="form-control" id="asunto" name="asunto">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" id="generarPDF">Generar PDF</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        </section>
+      
+        <section  class="Formulario-contrato d-flex flex-column">
+          <div id="form-contrato-container" class="container">
+            <div id="contrato-container" class="align-self-center text-center">
+              <h3>HACE NEGOCIOS CON NOSOTROS</h3>
+              <h2 class="title text-center">Contrato</h2>
+            </div>
+            <div class="row mx-auto">
+              <div class="col-12">
+                <form id="formulario-contrato">
+                  <div class="form-section current" id="section-1">
+                    <h4 class="paso1 text-center">Paso 1: Información General</h4>
+                    <label for="nombreContrato" class="form-label">Nombre de la empresa:</label>
+                    <input type="text" id="nombreContrato" name="nombreContrato" class="form-control" placeholder="nombre de la empresa o persona">
+                    <!-- ... -->
+                    <label for="tipo" class="form-label">tipo de aplicacion que desea desarrollar:</label>
+                    <input type="text" id="tipo" name="tipo" class="form-control" placeholder="tipo de aplicacion">
+                    <!--... -->
+                    <label for="presupuesto" class="form-label">¿Cual es su presupuesto para el desarrollo de la aplicacion:</label>
+                    <input type="text" id="presupuesto" name="presupuesto" class="form-control" placeholder="presupuesto en USD">
+                    <!--... -->
+                    <div class="d-flex justify-content-between mt-4">
+                      <button type="button" class="btn btn-outline-info mt-4 col-4 align-self-end" data-target="#section-2">Siguiente</button>
+                      </div>
+                    </div>
+                  
+                  <div class="form-section" id="section-2">
+
+                    <h4 class="text-center">Paso 2: Funcionalidades</h4>
+
+
+                    <label for="tiempo" class="form-label">¿Cuál es el plazo de tiempo que tiene para el desarrollo de la aplicación?</label>
+                    <input type="text" id="tiempo" name="tiempo" class="form-control" placeholder="tiempo de desarrollo">
+
+
+                    <label for="Funcionalidades" class="form-label">¿precisa alguna funcionalidad en especifico?</label>
+                    <input type="text" id="funcionalidades" name="funcionalidades" class="form-control" placeholder="funcionalidad especifica">
+
+
+                    <label for="integración" class="form-label">¿Desea que la aplicación tenga algún tipo de integración con otras plataformas o servicios?</label>
+                    <input type="text" id="Integración" name="Integración" class="form-control" placeholder="integracion">
+
+
+                    <button type="button" class="btn btn-outline-info mt-4 col-4" data-target="#section-1">Anterior</button>
+                    <button type="button" class="btn btn-outline-info mt-4 col-4" data-target="#section-3">Siguiente</button>
+                  </div>
+                  
+
+                  <div class="form-section active" id="section-3">
+
+                    <h4 class="text-center">Paso 3: Diseño y plataforma:</h4>
+
+                    <label for="diseño" class="form-label">¿Cuál es su diseño preferido para la aplicación?</label>
+                    <input type="text" id="diseño" name="diseño" class="form-control" placeholder="diseño preferido">
+
+
+                    <label for="plataforma" class="form-label">¿Desea que la aplicación esté disponible en una plataforma específica (iOS, Android, etc.)?</label>
+                    <input type="text" id="plataforma" name="plataforma" class="form-control" placeholder="plataforma especifica">
+
+
+                    <label for="requisito" class="form-label">¿Hay algún requisito adicional para la plataforma de la aplicación?</label>
+                    <input type="text" id="requisito" name="requisito" class="form-control" placeholder="requisitos adicionales">
+
+
+                    <button  id="generarPDF" type="button" class="btn btn-primary" onclick="generatePDF()">Generar PDF</button>
+                    <button type="button" class="btn btn-outline-info mt-4 col-4" id="Anterior"data-target="#section-2">Anterior</button>
+                  
+                  </div>
+    
+                  <button id="enviar" type="submit" class="btn btn-outline-info mt-4 col-4">Enviar</button>
+                </form>
+                
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+
+      <div id="footer-container-all" class="container-fluid">
+        <p class="text-center p-3 pa-6 m-0">2022 Argentina Programa 4.0 derechos reservados equipo 18</p>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
